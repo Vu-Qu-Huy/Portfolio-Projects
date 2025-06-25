@@ -27,10 +27,8 @@ const App = () => {
   const [tipOfDay, setTipOfDay] = useState("");
   const [cafes, setCafes] = useState([]);
 
-  const SUPABASE_URL = "https://ouodmggezpbzmagenapm.supabase.co";
-  const SUPABASE_ANON_KEY =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91b2RtZ2dlenBiem1hZ2VuYXBtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg4NTE5MTcsImV4cCI6MjA2NDQyNzkxN30.M70PStYMWya9skxr09Rac9KSMh-xvFPYFIKaudkHtbI";
-
+  const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+  const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
   const initialCafes = [
     {
       id: 1,
